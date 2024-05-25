@@ -16,7 +16,7 @@ Output: ('pokemon name', expected probability to be correct)
 ### Example 1
 
 Example: `python classify.py sample.png`
-![Sample Image](sample.png)
+![Sample Image](sample.png =100x250)
 
 Sample Output: `('Venusaur', 0.5306184)`
 ![Sample Output](sample_outputs/sample_output.png)
