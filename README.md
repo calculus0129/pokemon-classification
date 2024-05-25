@@ -18,7 +18,7 @@ Sample Output: `('Venusaur', 0.5306184)`
 ![Sample Output](sample_output.png)
 
 Note: google Venusaur
-![Venusaur Image](sample_output.png)
+![Venusaur Image](sample_note.png)
 
 ## Objective
 
