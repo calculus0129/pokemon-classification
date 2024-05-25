@@ -42,7 +42,7 @@ Example: `python classify.py samples/좋빠가.gif `
 Sample Output: `('Kingler', 0.2107012)`
 
 Note: Google Kingler
-![Kingle Image](samples/kingle_image.png)
+![Kingle Image](sample_outputs/kingle_image.png)
 
 ## Objective
 
