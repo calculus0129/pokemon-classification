@@ -11,6 +11,15 @@ Install python & etc.
 $ python classify.py <image file name>
 ```
 
+Example: `python classify.py sample.png`
+![Sample Image](sample.png)
+
+Sample Output: `('Venusaur', 0.5306184)`
+![Sample Output](sample_output.png)
+
+Note: google Venusaur
+![Venusaur Image](sample_output.png)
+
 ## Objective
 
 Classify a given image into a pokemon. It's fun!

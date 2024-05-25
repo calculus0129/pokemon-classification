@@ -16,28 +16,31 @@ def preprocess_image(image_path, target_size):
     img_array /= 255.0
     return img_array
 
-if __name__ == '__main__':
-    
-    print(sys.argv)
-    
+def predict(model, labels, image_path = 'example.gif'):
     # Example usage
-    image_path = 'example.gif'
     processed_image = preprocess_image(image_path, target_size=(224, 224))
-    labels=[]
-    
-    # Load list from a file
-    with open('labels.json', 'r') as file:
-        labels = json.load(file)
 
-    print(len(labels))
-
-    # Load the model
-    model = load_model('pokemon_classifier_vgg16_1_model.h5')
     predictions = model.predict(processed_image)
-    print(predictions.shape)
+    # print(predictions.shape) # (1, 307)
     # print(predictions)  # Outputs probability for each class
     pred_idx = np.argmax(predictions, axis=1)[0]
 
     predicted_label = labels[pred_idx]
     prob = predictions[0,pred_idx]
-    print(predicted_label, prob)
+    return predicted_label, prob
+
+if __name__ == '__main__':
+    
+    if len(sys.argv)-1 < 1:
+        print(f'usage: python {sys.argv[0]} <image file name>')
+        exit(0)
+    model=load_model('pokemon_classifier_vgg16_1_model.h5')
+    labels = []
+    # Load list from a file
+    with open('labels.json', 'r') as file:
+        labels = json.load(file)
+
+    print(f'length of labels: {len(labels)}')
+    
+    for i in sys.argv[1:]:
+        print(predict(model, labels, i))
