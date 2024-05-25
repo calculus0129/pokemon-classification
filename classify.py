@@ -17,6 +17,9 @@ def preprocess_image(image_path, target_size):
     return img_array
 
 if __name__ == '__main__':
+    
+    print(sys.argv)
+    
     # Example usage
     image_path = 'example.gif'
     processed_image = preprocess_image(image_path, target_size=(224, 224))
@@ -24,7 +27,7 @@ if __name__ == '__main__':
     
     # Load list from a file
     with open('labels.json', 'r') as file:
-        loaded_list = json.load(file)
+        labels = json.load(file)
 
     print(len(labels))
 
