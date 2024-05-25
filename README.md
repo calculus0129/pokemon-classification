@@ -11,14 +11,38 @@ Install python & etc.
 $ python classify.py <image file name>
 ```
 
+Output: ('pokemon name', expected probability to be correct)
+
+### Example 1
+
 Example: `python classify.py sample.png`
 ![Sample Image](sample.png)
 
 Sample Output: `('Venusaur', 0.5306184)`
-![Sample Output](sample_output.png)
+![Sample Output](sample_outputs/sample_output.png)
 
-Note: google Venusaur
-![Venusaur Image](sample_note.png)
+Note: Google Venusaur
+![Venusaur Image](sample_outputs/sample_note.png)
+
+### Example 2
+
+Example: `python classify.py samples/flying-kirby.png`
+![Flying Kirby](samples/flying-kirby.png)
+
+Sample Output: `('Clefairy', 0.9496465)`
+
+Note: Google Clefairy
+![Clefairy Image](sample_outputs/clefairy.png)
+
+### Example 3
+
+Example: `python classify.py samples/좋빠가.gif `
+![Korean President Image](samples/좋빠가.gif)
+
+Sample Output: `('Kingler', 0.2107012)`
+
+Note: Google Kingler
+![Kingle Image](samples/kingle_image.png)
 
 ## Objective
 
@@ -50,7 +74,7 @@ e.g. Kirby, a person, etc.
   - Overcoming: Ask GPT for a parallel loading code, and waited...
 - Too low performance + overfitting
   - Challenges: It still had too low performance
-  - Overcoming: Train + data cleaning (wipe out the data with only 5 data or so: one site had a lot of data (at least about 15) for all labeled pokemons there; others had like about 5 or so.)
+  - Overcoming: Train + data cleaning (wipe out the data with only 5 data or so: one site had a lot of data (at least about 15) for all labeled pokemons there; others had like about 5 or so.) (in progress)
 
 ## Things to Boast
 
