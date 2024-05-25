@@ -15,10 +15,12 @@ Output: ('pokemon name', expected probability to be correct)
 
 ### Example 1
 
-Example: `python classify.py sample.png`
-![Sample Image](sample.png =100x)
+<!-- To resize an image in Markdown, you can't directly specify the size like you might do in HTML or with some image editing tools. Markdown itself does not support resizing images by width and height attributes within its syntax. However, you have a few options depending on where you are going to use the Markdown file: -->
 
-Sample Output: `('Venusaur', 0.5306184)`
+Example: `python classify.py samples/HeXAPresident.png`
+![Sample Image](samples/HeXAPresident.png)
+
+Sample Output: `('Venusaur', 0.5483796)`
 ![Sample Output](sample_outputs/sample_output.png)
 
 Note: Google Venusaur
