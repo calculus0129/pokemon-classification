@@ -78,8 +78,7 @@ e.g. Kirby, a person, etc.
 
 ## Things to Boast
 
-I had never tried CNN or image resizing myself (actually I have a homework related, but not yet finished...LOL), but I made it! \\
-
+I had never tried CNN or image resizing myself (actually I have a homework related, but not yet finished...LOL), but I made it! \
 Although it had 70% validation accuracy and 40% test accuracy, it did seem to work as intended!
 
 ## Future Development
